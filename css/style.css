@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+html {
+    --redColor: red;
+    --greenColor: #0CC789;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
+    background-color: #000;
+}
+
+.cstm_ht {
+    height: 100vh;
+}
+
+figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+figure>img {
+    height: 250px;
+    width: auto;
+}
+
+figure>p {
+    text-align: center;
+}
+
+section.main_banner {
+    overflow: hidden;
+    position: relative;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    background-color: #0CC789;
+    border-radius: 50%;
+    position: absolute;
+    top: -150px;
+    left: 75px;
+}
+
+.circle_2 {
+    height: 150px;
+    width: 150px;
+    background-color: #A20CC7;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    left: -75px;
+}
+
+
+/* .circle_3 {
+    height: 150px;
+    width: 150px;
+    background-color: var(--greenColor);
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: -35px;
+}
+
+.circle_4 {
+    height: 150px;
+    width: 150px;
+    background-color: var(--redColor);
+    border-radius: 50%;
+    position: absolute;
+    top: 225px;
+    right: 50px;
+    z-index: 1;
+} */
+
+.play_img {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+#crcle_one {
+    content: '';
+    background: var(--redColor);
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 55%;
+    transform: translate(-40%, -50%);
+}
+
+#crcle_two {
+    content: '';
+    background: var(--greenColor);
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: 35%;
+    transform: translate(-40%, -50%);
+}
+
+.puma_text {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    font-size: 25px;
+    /* position: relative; */
+}
+
+span.ft_wt_1 {
+    font-weight: 600;
+}
+
+span.ft_wt_2>img {
+    height: 70px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: -13px;
+    right: -95px;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 1;
+    margin: 0 15px 0 0!important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #0CC789 !important;
+    z-index: 1;
+}
+
+span.swiper-pagination-bullet::before {
+    content: '';
+    height: 6px;
+    width: 2%;
+    background: white;
+    position: absolute;
+    top: 5px;
+    left: 48%;
+    z-index: -1;
+}
+
+span.swiper-pagination-bullet::after {
+    content: '';
+    height: 6px;
+    width: 2%;
+    background: white;
+    position: absolute;
+    top: 5px;
+    left: 49%;
+    z-index: -1;
+}
+
+button.shop_btn {
+    position: absolute;
+    background: white;
+    padding: 15px 60px;
+    bottom: 5%;
+    font-size: 20px;
+    right: 5%;
+    font-weight: 600;
+}
+
+.slider_txt {
+    position: absolute;
+    color: white;
+    top: 45%;
+    right: 10%;
+    width: 15%;
+}
+
+p.slider_para {
+    padding-top: 20px;
+    line-height: 1.2em;
+    padding-right: 50px;
+}
+
+.puma_head {
+    color: white;
+    position: absolute;
+    top: 2%;
+    right: 10%;
+}
+
+.puma_head>h2 {
+    font-size: 27px;
+}
+
+.puma_head>h2::before {
+    content: url(../images/puma_symb.png);
+    position: absolute;
+    top: -71%;
+    right: 75%;
+    transform: scale(0.5);
+}
+
+.slider_txt>h4::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: -35%;
+    height: 5px;
+    width: 115%;
+    background: pink;
+}
+
+.empercent {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.left_text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.right_text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.text_pos {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+}

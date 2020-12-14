@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4.01</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="main_banner">
+        <div class="container-fluid">
+            <div class="swiper-container" id="swiper_container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cstm_ht">
+                        <figure class="fig_img" id="fig_img_new">
+                            <img class="img_1" src="./images/rt_show.png" alt="">
+                            <p>USE THE SLIDER
+                                <BR> TO VIEW MORE</p>
+                        </figure>
+                        <div class="slider_txt" id="sli_der_txt">
+                            <h4>NEW TECHNOLOGY</h4>
+                            <P class="slider_para">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide cstm_ht">
+                        <figure class="fig_img2" id="fig_img_new2">
+                            <img class="img_2" src="./images/frnt_show.png" alt="">
+                            <p>USE THE SLIDER
+                                <BR> TO VIEW MORE</p>
+                        </figure>
+                        <div class="slider_txt" id="sli_der_txt2">
+                            <h4>CUSHIONING</h4>
+                            <P class="slider_para">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide cstm_ht">
+                        <figure class="fig_img3" id="fig_img_new3">
+                            <img class="img_3" src="./images/lt_show.png" alt="">
+                            <p>USE THE SLIDER
+                                <BR> TO VIEW MORE</p>
+                        </figure>
+                        <div class="slider_txt" id="sli_der_txt3">
+                            <h4>ENERGY RETURN</h4>
+                            <P class="slider_para">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </P>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button" class="shop_btn" id="sh_op_btn"> SHOP NOW</button>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="crcle_on" id="crcle_one"></div>
+            <div class="crcle_tw" id="crcle_two"></div>
+            <div class="puma_head">
+                <h2>HYBRID</h2>
+                <P>The Power of &</P>
+            </div>
+            <div class="circle" id="circle_one"></div>
+            <div class="circle_2" id="circle_two"></div>
+            <div class="puma_text" id="pu_ma_text">
+                <i style="position: relative;"> FOREVER <strong>FASTER</strong> <span class="ft_wt_2"> <img src="./images/puma.png"  alt=""></span>
+             </i>
+            </div>
+            <div class="play_img" id="pl_ay_img">
+                <img src="./images/Capture.PNG" alt="">
+            </div>
+            <div class="empercent" id="emp_ercent">
+                <img src="./images/amp.png" alt="">
+            </div>
+            <div class="left_text" id="left_annni_text">
+                <h2>CUSHIONING</h2>
+            </div>
+            <div class="right_text" id="right_annni_text">
+                <h2>ENERGY RETURN</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+        // emper starts here
+        TweenMax.set('.empercent', {
+            autoAlpha: 1
+        })
+
+        var t1 = new TimelineMax();
+        t1.to('#emp_ercent', 4, {
+                autoAlpha: 0
+            }, '+=.5')
+            // emper end here
+
+        // LEFT_TEXT STARTS HERE 
+        TweenMax.set('.left_text', {
+            autoAlpha: 0,
+            x: -1000,
+            ease: "circ.out"
+        })
+
+        var t2 = new TimelineMax();
+        t2.to('#left_annni_text', 2, {
+                autoAlpha: 1,
+                x: 0,
+                ease: "circ.out"
+            }, '-=3')
+            // LEFT_TEXT ENDS HERE 
+
+        // RIGHT_TEXT STARTS HERE 
+        TweenMax.set('.right_text', {
+            autoAlpha: 0,
+            x: 1000,
+            ease: "circ.out"
+        })
+
+        var t2 = new TimelineMax();
+        t2.to('#right_annni_text', 2, {
+                autoAlpha: 1,
+                x: 0,
+                ease: "circ.out"
+            }, '-=3')
+            // RIGHT_TEXT ENDS HERE 
+
+        // circle_one starts
+        TweenMax.set('.crcle_on', {
+            autoAlpha: 0,
+            x: -1000,
+            ease: "circ.out"
+        })
+
+        var t2 = new TimelineMax();
+        t2.to('#crcle_one', 4, {
+                autoAlpha: 1,
+                x: -150,
+                ease: "circ.out"
+            }, '-=3.5')
+            // circle_one ends
+
+        // circle_two starts
+        TweenMax.set('.crcle_tw', {
+            autoAlpha: 0,
+            x: 600,
+            ease: "circ.out"
+        })
+
+        var t3 = new TimelineMax();
+        t3.to('#crcle_two', 4, {
+                autoAlpha: 1,
+                x: -150,
+                ease: "circ.out"
+            }, '-=3.5')
+            // circle_two ends
+
+        // LEFT_TEXT STARTS HERE 
+        TweenMax.set('.left_text,.right_text', {
+            autoAlpha: 1,
+            ease: "circ.out"
+        })
+
+        var t2 = new TimelineMax();
+        t2.to('#left_annni_text,#right_annni_text', 2, {
+                autoAlpha: 0,
+                ease: "circ.out"
+            }, '+=3.5')
+            // LEFT_TEXT ENDS HERE
+
+        // shoes starts
+        TweenMax.set('.swiper-container', {
+            autoAlpha: 0,
+            y: 1000,
+            ease: "circ.out"
+        })
+
+        var t4 = new TimelineMax();
+        t4.to('#swiper_container', 4, {
+                    autoAlpha: 1,
+                    y: -10,
+                    ease: "circ.out"
+                },
+                '+=3')
+            // shoes ends
+            // top circle starts
+        TweenMax.set('.shoes', {
+            autoAlpha: 0,
+            y: -1050,
+            ease: "circ.out"
+        })
+
+        var t4 = new TimelineMax();
+        t4.to('#circle_one', 4, {
+                autoAlpha: 1,
+                y: 70,
+                ease: "circ.out"
+            })
+            // top circle ends
+            // bottom circle starts
+        TweenMax.set('.circle_2', {
+            autoAlpha: 0,
+            x: -170,
+            ease: "circ.out"
+        })
+
+        var t4 = new TimelineMax();
+        t4.to('#circle_two', 4, {
+                autoAlpha: 1,
+                x: 5,
+                ease: "circ.out"
+            })
+            // bottom circle ends
+
+        // side text starts
+        TweenMax.set('.slider_txt,.puma_text,.shop_btn,.play_img', {
+            autoAlpha: 0
+
+        })
+
+        var t4 = new TimelineMax();
+        t4.to('#sli_der_txt,#sli_der_txt2,#sli_der_txt3,#pu_ma_text,#sh_op_btn,#pl_ay_img', 4, {
+                autoAlpha: 1
+
+            }, '+=6')
+            // side text ends
+    </script>
+
+</body>
+
+</html>
